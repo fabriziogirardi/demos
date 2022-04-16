@@ -8,6 +8,7 @@ if (PHP_SAPI != 'cli')
  * calcularFechas
  * @param array $args
  * @return array|void
+ * @noinspection PhpConditionAlreadyCheckedInspection
  */
 function calcularFechas(array $args)
 {
