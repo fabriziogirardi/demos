@@ -23,4 +23,16 @@ function fibonacci(int $cuantos)
     return $resultado;
 }
 
+if ($argc != 2) {
+    if ($argc > 2) {
+        echo "Solo un parámetro está permitido" . PHP_EOL;
+    } else {
+        echo "Falta el parámetro indicando la cantidad de números a calcular" . PHP_EOL;
+    }
+    exit(404);
+}
+if (!is_numeric($argv[1])) {
+    echo "El segundo parámetro debe ser un número" . PHP_EOL;
+    exit(404);
+}
 print_r(fibonacci($argv[1]));
