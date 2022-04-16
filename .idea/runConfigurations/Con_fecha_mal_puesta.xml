@@ -1,0 +1,5 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Con fecha mal puesta" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/calcular_fechas/calcular_fechas.php" scriptParameters="&quot;33 de 500&quot; &quot;12 de agosto de 2022&quot;">
+    <method v="2" />
+  </configuration>
+</component>
