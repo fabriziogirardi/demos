@@ -1,0 +1,5 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="primeros 54" type="PhpLocalRunConfigurationType" factoryName="PHP Console" folderName="fibonacci" path="$PROJECT_DIR$/fibonacci/fibonacci.php" scriptParameters="54">
+    <method v="2" />
+  </configuration>
+</component>
