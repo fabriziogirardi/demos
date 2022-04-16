@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Con 2 fechas y dia en letras" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/calcular_fechas/calcular_fechas.php" scriptParameters="&quot;10/06/2021&quot; &quot;13/04/2022&quot; &quot;da&quot;">
+  <configuration default="false" name="Con 2 fechas y dia en letras" type="PhpLocalRunConfigurationType" factoryName="PHP Console" folderName="calcular_fechas" path="$PROJECT_DIR$/calcular_fechas/calcular_fechas.php" scriptParameters="&quot;10/06/2021&quot; &quot;13/04/2022&quot; &quot;da&quot;">
     <method v="2" />
   </configuration>
 </component>
