@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * calcularFechas
+ * @param array $args
+ * @return array|void
+ */
 function calcularFechas(array $args)
 {
     if (count($args) < 4) {
