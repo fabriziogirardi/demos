@@ -1,5 +1,9 @@
 <?php
 
+// Si no es ejecutado por CLI, salir con código 500
+if (PHP_SAPI != 'cli')
+    exit(500);
+
 /**
  * calcularFechas
  * @param array $args
@@ -7,6 +11,7 @@
  */
 function calcularFechas(array $args)
 {
+    // Controlar que estén todos los parámetros
     if (count($args) < 4) {
         echo "El script no fue llamado correctamente." . PHP_EOL;
         echo "Por favor introduzca 2 fechas con el formato dia/mes/año en números." . PHP_EOL;
@@ -17,9 +22,11 @@ function calcularFechas(array $args)
         exit(404);
     }
     
+    // Crear fechas
     $fecha1 = DateTime::createFromFormat('d/m/Y', $args[1]);
     $fecha2 = DateTime::createFromFormat('d/m/Y', $args[2]);
     
+    // Verificar fechas creadas
     if (!$fecha1 || !$fecha2) {
         echo "La/s siguiente/s fechas no es/son válida/s" . PHP_EOL;
         if (!$fecha1)
@@ -52,9 +59,11 @@ function calcularFechas(array $args)
     
     $diasCalculados = [];
     
+    // Crear el primer dia solicitado
     $fecha1->modify($diasValidos[$args[3]]);
     $diasCalculados[] = $fecha1->format('d/m/Y');
     
+    // Loopear todas las fechas hasta llegar a la fecha 2.
     while ($fecha1 < $fecha2) {
         $fecha1->modify('+1 week');
         $diasCalculados[] = $fecha1->format('d/m/Y');
